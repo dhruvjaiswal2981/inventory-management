@@ -101,7 +101,7 @@
 - Backend Deployment
 
     - Live Demo: The application is hosted on Render
-    - Access it here: 
+    - Access it here: https://inventory-management-yhs9.onrender.com
 
 - Frontend Deployment
 
