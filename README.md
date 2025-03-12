@@ -106,7 +106,7 @@
 - Frontend Deployment
 
     - Live Demo: The application is hosted on Netlify.
-    - Access it here: 
+    - Access it here: https://inventory-manage-app.netlify.app/
 
 ## 👨‍💻 Author
 
