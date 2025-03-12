@@ -45,7 +45,7 @@
     ```
 
 2️⃣ Backend Setup
-- Make sure you have MySQL installed and running.
+- Make sure you have SQLite installed and running.
 1. Install dependencies
 
     ```bash
