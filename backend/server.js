@@ -1,5 +1,5 @@
-const express = require("express");
 const mysql = require("mysql2");
+const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -8,16 +8,22 @@ app.use(express.json());
 app.use(cors());
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Dhruv@2981",
-    database: "inventory_db"
+    host: process.env.DB_HOST || "your-database-host.com",
+    user: process.env.DB_USER || "your-username",
+    password: process.env.DB_PASSWORD || "your-password",
+    database: process.env.DB_NAME || "inventory_db",
+    port: process.env.DB_PORT || 3306,
+    ssl: { rejectUnauthorized: false }  // ✅ Disables SSL verification
 });
 
 db.connect(err => {
-    if (err) throw err;
-    console.log("MySQL Connected...");
+    if (err) {
+        console.error("❌ Database connection failed:", err);
+        return;
+    }
+    console.log("✅ MySQL Connected...");
 });
+
 
 // Add a new product
 app.post("/products", (req, res) => {
@@ -78,5 +84,6 @@ app.get("/stock-alerts", (req, res) => {
     });
 });
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// ✅ Use environment variables for security
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

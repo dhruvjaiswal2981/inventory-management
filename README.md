@@ -1,14 +1,14 @@
-### 📦 Inventory Management System
+# 📦 Inventory Management System
 
 - This is a full-stack Inventory Management System with CRM integration, built using React, Node.js, Express, and MySQL. The system allows a company to track product stock, manage customer orders, and receive stock alerts dynamically.
 
 ## 🚀 Features
 
-✅ Add Products – Add new products to the inventory with stock and price.
-✅ Manage Inventory – Update inventory dynamically when orders are placed.
-✅ Place Orders – Customers can place orders, and stock is updated in real time.
-✅ Stock Alerts – Receive alerts when stock is low.
-✅ User-Friendly UI – Clean and responsive interface for better usability.
+- ✅ Add Products – Add new products to the inventory with stock and price.
+- ✅ Manage Inventory – Update inventory dynamically when orders are placed.
+- ✅ Place Orders – Customers can place orders, and stock is updated in real time.
+- ✅ Stock Alerts – Receive alerts when stock is low.
+- ✅ User-Friendly UI – Clean and responsive interface for better usability.
 
 ## 🛠 Tech Stack
 
@@ -19,6 +19,7 @@
 ## Project Structure
 
     ```bash
+
     /inventory-management
     │── /backend
     │   │── server.js             # Main backend server file
@@ -39,8 +40,10 @@
 1️⃣ Clone the Repository
 
     ```bash
+
     git clone https://github.com/dhruvjaiswal2981/inventory-management.git
     cd inventory-management
+
     ```
 
 2️⃣ Backend Setup
@@ -48,8 +51,10 @@
 1. Install dependencies
 
     ```bash
+
     cd backend
     npm install
+    
     ```
 
 2. Run Backend Server
