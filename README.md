@@ -1,6 +1,6 @@
 # 📦 Inventory Management System
 
-- This is a full-stack Inventory Management System with CRM integration, built using React, Node.js, Express, and MySQL. The system allows a company to track product stock, manage customer orders, and receive stock alerts dynamically.
+- This is a full-stack Inventory Management System with CRM integration, built using React, Node.js, Express, and SQLite. The system allows a company to track product stock, manage customer orders, and receive stock alerts dynamically.
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@
 
 - Frontend: React.js
 - Backend: Node.js, Express.js
-- Database: MySQL
+- Database: SQLite
 
 ## Project Structure
 

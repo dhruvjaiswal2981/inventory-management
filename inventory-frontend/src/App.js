@@ -48,7 +48,7 @@ const App = () => {
             <button onClick={handleAddProduct}>Add Product</button>
 
             <h3>Place Order</h3>
-            <select onChange={(e) => setProductId(e.target.value)}>
+            <select className="val" onChange={(e) => setProductId(e.target.value)}>
                 <option>Select Product</option>
                 {products.map(p => <option key={p.id} value={p.id}>{p.name} (Stock: {p.stock})</option>)}
             </select>
