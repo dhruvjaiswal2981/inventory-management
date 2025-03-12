@@ -23,8 +23,6 @@
     /inventory-management
     │── /backend
     │   │── server.js             # Main backend server file
-    │   │── database.js           # Database connection file
-    │   │── routes.js             # API routes for managing products & orders
     │── /inventory-frontend
     │   │── src
     │   │   │── App.js            # Main React component
@@ -54,7 +52,7 @@
 
     cd backend
     npm install
-    
+
     ```
 
 2. Run Backend Server

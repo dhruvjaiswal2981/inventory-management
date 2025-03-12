@@ -8,12 +8,12 @@ app.use(express.json());
 app.use(cors());
 
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || "your-database-host.com",
-    user: process.env.DB_USER || "your-username",
-    password: process.env.DB_PASSWORD || "your-password",
+    host: process.env.DB_HOST || "localhost",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "Dhruv@2981",
     database: process.env.DB_NAME || "inventory_db",
     port: process.env.DB_PORT || 3306,
-    ssl: { rejectUnauthorized: false }  // ✅ Disables SSL verification
+    ssl: { rejectUnauthorized: false } // ✅ Disable SSL verification if needed
 });
 
 db.connect(err => {
